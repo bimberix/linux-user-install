@@ -1,3 +1,3 @@
-all: xclip xsel
+all: xclip xsel shellcheck
 
 include .manifest.mk
