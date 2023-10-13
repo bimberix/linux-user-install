@@ -29,4 +29,3 @@ cmake: $(CMAKE_PKGNAME)/bin/cmake
 	$(MAKE) $(MKFLAGS) install
 
 endif
-
