@@ -1,7 +1,7 @@
 ifndef _INC_XSEL
 _INC_XSEL=yes
 
-include .manifest.mk
+include manifest.mk
 
 XSEL_VERSION?=1.2.0
 XSEL_PKGNAME=xsel-$(XSEL_VERSION)

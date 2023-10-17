@@ -1,7 +1,7 @@
 ifndef _INC_XCLIP
 _INC_XCLIP=yes
 
-include .manifest.mk
+include manifest.mk
 
 XCLIP_VERSION?=0.13
 XCLIP_PKGNAME=xclip-$(XCLIP_VERSION)

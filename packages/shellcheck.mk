@@ -1,7 +1,7 @@
 ifndef _INC_SHELLCHECK
 _INC_SHELLCHECK=yes
 
-include .manifest.mk
+include manifest.mk
 
 SHELLCHECK_VERSION?=0.9.0
 SHELLCHECK_PKGNAME=shellcheck-$(SHELLCHECK_VERSION)

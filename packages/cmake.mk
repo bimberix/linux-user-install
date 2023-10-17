@@ -1,7 +1,7 @@
 ifndef _INC_CMAKE
 _INC_CMAKE=yes
 
-include .manifest.mk
+include manifest.mk
 
 CMAKE_VERSION?=3.27.7
 CMAKE_PKGNAME=cmake-$(CMAKE_VERSION)

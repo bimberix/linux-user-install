@@ -3,7 +3,7 @@ https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
 ifndef _INC_NEOVIM
 _INC_NEOVIM=yes
 
-include .manifest.mk
+include manifest.mk
 
 NEOVIM_VERSION?=0.9.4
 NEOVIM_PKGNAME=neovim-$(NEOVIM_VERSION)

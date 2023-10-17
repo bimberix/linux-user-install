@@ -1,3 +1,4 @@
-all: xclip xsel shellcheck cmake nvim
+info:
+	@echo "Available packages: xclip xsel shellcheck cmake nvim python node"
 
-include .manifest.mk
+include manifest.mk
