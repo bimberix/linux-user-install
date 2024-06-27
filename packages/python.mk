@@ -29,6 +29,7 @@ $(PYTHON_PKGNAME)/Makefile: $(PYTHON_PKGNAME)/configure
 	cd $(PYTHON_DIR) && \
 	./configure \
 		--prefix=$(PREFIX) \
+		--enable-loadable-sqlite-extensions \
 		--enable-optimizations
 
 $(PYTHON_PKGNAME)/python: $(PYTHON_PKGNAME)/Makefile
