@@ -6,7 +6,7 @@ include manifest.mk
 GMP_VERSION?=6.2.1
 GMP_PKGNAME=gmp-$(GMP_VERSION)
 GMP_PKGTYPE=tar.bz2
-GMP_DIR=$(SRC_DIR)/$(GMP_PKGNAME)
+GMP_DIR=$(SRCDIR)/$(GMP_PKGNAME)
 GMP_PKG=$(GMP_PKGNAME).$(GMP_PKGTYPE)
 GMP_URL=https://gcc.gnu.org/pub/gcc/infrastructure/$(GMP_PKG)
 

@@ -27,4 +27,3 @@ go: $(GO_PKGNAME)/bin/go
 	ln -sf $(GO_DIR)/bin/gofmt $(PREFIX)/bin/ 
 
 endif
-

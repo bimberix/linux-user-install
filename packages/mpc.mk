@@ -6,7 +6,7 @@ include manifest.mk
 MPC_VERSION?=1.2.1
 MPC_PKGNAME=mpc-$(MPC_VERSION)
 MPC_PKGTYPE=tar.gz
-MPC_DIR=$(SRC_DIR)/$(MPC_PKGNAME)
+MPC_DIR=$(SRCDIR)/$(MPC_PKGNAME)
 MPC_PKG=$(MPC_PKGNAME).$(MPC_PKGTYPE)
 MPC_URL=https://gcc.gnu.org/pub/gcc/infrastructure/$(MPC_PKG)
 

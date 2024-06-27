@@ -3,10 +3,10 @@ _INC_GCC=yes
 
 include manifest.mk
 
-GCC_VERSION?=13.2.0
+GCC_VERSION?=14.1.0
 GCC_PKGNAME=gcc-$(GCC_VERSION)
 GCC_PKGTYPE=tar.xz
-GCC_DIR=$(SRC_DIR)/$(GCC_PKGNAME)
+GCC_DIR=$(SRCDIR)/$(GCC_PKGNAME)
 GCC_PKG=$(GCC_PKGNAME).$(GCC_PKGTYPE)
 GCC_URL=https://ftp.fu-berlin.de/unix/languages/gcc/releases/$(GCC_PKGNAME)/$(GCC_PKG)
 
@@ -20,8 +20,9 @@ $(GCC_PKGNAME)/Makefile: libgmp.so libmpfr.so libmpc.so | $(GCC_PKGNAME)/configu
 	cd $(GCC_DIR) && \
 	./configure \
 		--prefix=$(PREFIX) \
-		--with-gmp-include=$(PREFIX)/include \
-		--with-gmp-lib=$(PREFIX)/lib \
+		--with-gmp=$(PREFIX) \
+		--with-mpc=$(PREFIX) \
+		--with-mpfr=$(PREFIX) \
 		--disable-multilib
 
 $(GCC_PKGNAME)/host-$(ARCH)-pc-linux-gnu/gcc/xgcc: $(GCC_PKGNAME)/Makefile
