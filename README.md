@@ -1,7 +1,7 @@
 # Linux Local Package Manager
 
 The aim of this project is to implement basic Makefile rules that
-would allow installtion of packages in home directory and without
+would allow installation of packages in home directory and without
 root privileges.
 
 ## Example .bashrc appendix
