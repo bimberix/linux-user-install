@@ -1,11 +1,11 @@
-https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
+#https://github.com/neovim/neovim/archive/refs/tags/v0.9.4.tar.gz
 
 ifndef _INC_NEOVIM
 _INC_NEOVIM=yes
 
 include manifest.mk
 
-NEOVIM_VERSION?=0.10.0
+NEOVIM_VERSION?=0.10.4
 NEOVIM_PKGNAME=neovim-$(NEOVIM_VERSION)
 NEOVIM_PKGTYPE=tar.gz
 NEOVIM_DIR=$(SRCDIR)/$(NEOVIM_PKGNAME)
